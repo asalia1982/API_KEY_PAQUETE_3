@@ -53,7 +53,7 @@ Datos: edad={age}, sexo={sex}, bmi={bmi}, hijos={children}, fumador={smoker}, re
 Resultado: cluster={cluster}, riesgo={riesgo}.'''
         try:
             client = genai.Client(api_key=api_key)
-            r = client.models.generate_content(model='gemini-1.5-flash', contents=prompt)
+            r = client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
             st.info(r.text)
         except Exception as e:
             st.warning(f'No se pudo generar recomendación con Google: {e}')
