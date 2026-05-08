@@ -1,4 +1,3 @@
-```python
 import os, json, joblib
 import pandas as pd
 import streamlit as st
@@ -142,4 +141,3 @@ st.dataframe(
     df.head(20),
     use_container_width=True
 )
-```
